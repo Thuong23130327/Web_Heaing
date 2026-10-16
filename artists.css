@@ -1,0 +1,47 @@
+/* CSS specific to artists.html */
+.btc-team {
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.btc-team summary {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--ice-blue);
+    padding: 15px 20px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btc-team summary::-webkit-details-marker {
+    display: none;
+}
+
+.btc-team summary::after {
+    content: '\F282'; /* bootstrap icon chevron-down */
+    font-family: bootstrap-icons;
+    transition: transform 0.3s ease;
+}
+
+.btc-team[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.btc-team[open] summary {
+    background: rgba(56, 189, 248, 0.1);
+    border-bottom-color: var(--ice-blue);
+}
+
+.btc-team .artists-grid {
+    padding: 20px;
+    margin-top: 0;
+}

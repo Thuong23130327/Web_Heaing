@@ -1,0 +1,16 @@
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+
+/Ele/*
+  Cache-Control: public, max-age=2592000, immutable
+
+/img/*
+  Cache-Control: public, max-age=2592000, immutable
+
+/*.css
+  Cache-Control: public, max-age=86400
+
+/*.js
+  Cache-Control: public, max-age=86400
+,,'

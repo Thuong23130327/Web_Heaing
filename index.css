@@ -1,0 +1,328 @@
+/* CSS specific to index.html */
+
+/* Subtitle on top of Typo */
+.hero-top-subtitle {
+    font-size: 1.8rem;
+    color: #7dd3fc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: -50px;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+    /* Fix hamburger missing by giving space in nav */
+    
+    .logo-group {
+        max-width: 80%;
+    }
+    
+    .logo-title {
+        font-size: 1.15rem;
+        white-space: nowrap;
+        line-height: 1.2;
+    }
+    
+    .logo-subtitle {
+        font-size: 1rem;
+    }
+
+    .hamburger {
+        display: block !important;
+    }
+
+    /* Adjust the subtitle size */
+    .hero-top-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: -5px;
+    }
+
+    /* Make crane smaller and closer to Kỷ băng hà */
+    .hac-img {
+        max-width: 45%; 
+        bottom: -90px; 
+    }
+    
+    .hero-images {
+        min-height: 180px; 
+        margin-bottom: 50px; 
+    }
+}
+
+/* Custom Footer Styles */
+.custom-footer {
+    padding: 70px 20px;
+    color: white;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    position: relative;
+    z-index: 10;
+    font-family: 'AcmeGothic', sans-serif;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-registration {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.footer-registration h4 {
+    font-family: 'AcmeGothic', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.custom-btn {
+    display: inline-block;
+    padding: 14px 45px;
+    border-radius: 50px;
+    background: white;
+    color: var(--deep-blue, #1A3644);
+    font-weight: bold;
+    text-decoration: none !important;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(255,255,255,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                background 0.4s ease, 
+                color 0.4s ease, 
+                border-color 0.4s ease !important;
+    font-family: 'AcmeGothic', sans-serif;
+    will-change: transform, box-shadow, background;
+}
+
+.custom-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.85);
+    background: linear-gradient(135deg, rgba(125, 211, 252, 0.95), rgba(2, 132, 199, 0.95)) !important;
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.5);
+    text-decoration: none !important;
+}
+
+.custom-btn:active {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+}
+
+.footer-info-box {
+    background: rgba(255,255,255,0.03);
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    text-align: left;
+}
+
+.footer-col-title {
+    font-family: 'AcmeGothic', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    color: var(--ice-blue, #7DD3FC);
+}
+
+.footer-col-content {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.footer-info-item {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.icon-lg {
+    font-size: 1.5rem;
+    margin-top: 2px;
+}
+
+.footer-subtext {
+    font-size: 1rem;
+    color: #ccc;
+    margin-top: 5px;
+}
+
+.map-link-wrap {
+    margin-top: 12px;
+}
+
+.map-link {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 6px 15px;
+    border: 1px solid var(--ice-blue, #7DD3FC);
+    border-radius: 20px;
+    color: var(--ice-blue, #7DD3FC);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.map-link:hover {
+    background: var(--ice-blue, #7DD3FC);
+    color: var(--deep-blue, #1A3644);
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: var(--ice-blue, #7DD3FC);
+}
+
+.footer-link-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-link-block:hover {
+    color: var(--ice-blue, #7DD3FC);
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+.custom-socials {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-social-link {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-social-link:hover {
+    color: var(--ice-blue, #7DD3FC);
+}
+
+.footer-copyright {
+    text-align: center;
+    color: rgba(255,255,255,0.5);
+    font-size: 1rem;
+}
+
+/* Responsive Footer */
+@media (max-width: 900px) {
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        height: 80px;
+    }
+    
+    .logo-group {
+        max-width: 70%;
+        padding-right: 10px;
+    }
+
+    .logo-title {
+        font-size: clamp(0.5rem, 2.5vw, 0.75rem);
+        white-space: nowrap;
+    }
+    
+    .logo-subtitle {
+        font-size: 0.65rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-top-subtitle {
+        margin-bottom: 5px;
+    }
+
+    .hac-img {
+        max-width: 40%;
+        bottom: -110px;
+    }
+
+    .custom-footer {
+        padding: 40px 15px;
+    }
+    
+    .footer-registration h4 {
+        font-size: 1.5rem;
+    }
+
+    .custom-btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+    
+    .footer-info-box {
+        padding: 20px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-img {
+        height: 65px;
+    }
+    
+    .logo-title {
+        font-size: clamp(0.45rem, 2.2vw, 0.65rem);
+        white-space: nowrap;
+    }
+    
+    .logo-subtitle {
+        font-size: 0.55rem;
+        letter-spacing: 0px;
+    }
+
+    .footer-registration h4 {
+        font-size: 1.3rem;
+    }
+    
+    .custom-btn {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+    
+    .footer-col-title {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+    
+    .footer-col-content {
+        font-size: 1.05rem;
+    }
+}
